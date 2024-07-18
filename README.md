@@ -1,3 +1,7 @@
+# video-world
+
+---
+
 # 전체 설명 및 목차
 
 이 문서는 회원가입, 로그인 기능을 가진 웹 애플리케이션의 개발 과정과 주요 기능, 그리고 프로젝트 실행 방법에 대해 설명합니다.
@@ -93,4 +97,3 @@ npm run build
 - **TypeScript**: JavaScript에 정적 타입 지원을 추가하는 언어
 - **Autoprefixer**: CSS에 자동으로 vendor-prefix를 추가하는 PostCSS 플러그인
 - **PostCSS**: CSS 변환을 위한 도구
-# video-world
