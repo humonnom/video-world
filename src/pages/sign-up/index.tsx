@@ -137,7 +137,7 @@ function SignUp() {
                 form={props.id}
                 disabled={!props.isValid}
                 style={{ opacity: props.isValid ? 1 : 0.5 }}
-                className="w-72 bg-blue-500 text-white py-2 rounded"
+                className="w-full bg-blue-500 text-white py-2 rounded"
               >
                 제출하기
               </button>
