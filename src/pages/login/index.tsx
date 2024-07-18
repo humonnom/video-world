@@ -68,7 +68,7 @@ function Login() {
               <button
                 type={'submit'}
                 form={'login'}
-                className="w-72 bg-blue-500 text-white py-2 rounded"
+                className="w-full bg-blue-500 text-white py-2 rounded"
               >
                 로그인하기
               </button>
