@@ -1,18 +1,21 @@
 export const CATEGORY_OPTIONS = [
-  { value: 'programming', label: '프로그래밍' },
-  { value: 'infra', label: '인프라' },
-  { value: 'planning', label: '기획' },
-  { value: 'data', label: '데이터' },
-  { value: 'design', label: '디자인' },
+  { value: 'music', label: '음악' },
+  { value: 'education', label: '교육' },
+  { value: 'entertainment', label: '엔터테인먼트' },
+  { value: 'technology', label: '기술' },
+  { value: 'animation', label: '애니메이션' },
   { value: 'business', label: '비즈니스' },
   { value: 'marketing', label: '마케팅' },
-  { value: 'job', label: '취업/이직' },
+  { value: 'lifestyle', label: '라이프스타일' },
 ];
 
 export const JOB_OPTIONS = [
-  { value: 'developer', label: '개발자' },
-  { value: 'designer', label: '디자이너' },
-  { value: 'data-analyst', label: '데이터 분석가' },
-  { value: 'pm', label: 'PM' },
-  { value: 'marketer', label: '마케터' },
+  { value: 'technology', label: 'IT/기술' },
+  { value: 'creative', label: '창작/예술' },
+  { value: 'business', label: '경영/비즈니스' },
+  { value: 'science', label: '과학/연구' },
+  { value: 'healthcare', label: '의료/보건' },
+  { value: 'education', label: '교육' },
+  { value: 'finance', label: '금융/재무' },
+  { value: 'service', label: '서비스/고객 관리' },
 ];
