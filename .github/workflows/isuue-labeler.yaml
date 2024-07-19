@@ -1,0 +1,34 @@
+name: Issue Labeler
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  label-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/github-script@v7
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const issue = context.payload.issue;
+            const issueBody = issue.body.toLowerCase();
+            
+            if (issueBody.includes('bug') || issueBody.includes('error')) {
+              github.rest.issues.addLabels({
+                issue_number: issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                labels: ['bug']
+              });
+            }
+            
+            if (issueBody.includes('feature') || issueBody.includes('enhancement')) {
+              github.rest.issues.addLabels({
+                issue_number: issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                labels: ['enhancement']
+              });
+            }
