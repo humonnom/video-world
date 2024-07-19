@@ -28,6 +28,7 @@ const schema = {
   categories: array(string()).optional(),
 };
 
+
 function Profile() {
   const { loggedInUser, updateSession } = useContext(AuthContext);
   const [isEditing, setIsEditing] = useState(false);
